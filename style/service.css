@@ -1,0 +1,529 @@
+@import url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Manrope:wght@200..800&display=swap");
+
+:root {
+  --color-primary: #4baf47;
+  --color-secondary: #eec044;
+  --color-dark-1: #1f1e17;
+  --color-dark-2: #878680;
+  --color-light-1: #ffffff;
+  --color-bg: #f8f7f0;
+}
+
+
+.services {
+  background-color: var(--color-bg);
+}
+
+.section_header {
+  width: 100%;
+  text-align: center;
+  h3 {
+    font-size: 45px;
+  }
+}
+
+.services_container {
+  padding: 6rem 0rem;
+}
+
+.section_header_title_2 {
+  color: var(--color-secondary);
+  font-family: "Covered By Your Grace", serif;
+  font-size: 45px;
+}
+
+.services_row {
+  padding: 4rem 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 2.5rem;
+}
+
+.service {
+  width: 100%;
+  height: 40rem;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  border-radius: 1rem;
+}
+
+.service_first {
+  background-image: url("../assets/images/div.thumb.png");
+  object-fit: cover;
+  width: 100%;
+}
+
+.service_second {
+  background-image: url("../assets/finaly/aqilsug.jpg");
+  object-fit: cover;
+  width: 100%;
+}
+
+.service_third {
+  background-image: url("../assets/images/div.thumb (2).png");
+  object-fit: cover;
+  width: 100%;
+}
+
+.service_forth {
+  background-image: url("../assets/images/div.thumb (4).png");
+  object-fit: cover;
+  width: 100%;
+}
+
+.services_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 75%;
+  background-color: var(--color-light-1);
+  text-align: center;
+  padding: 0rem 1rem 1.2rem 1rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
+
+.service_icon {
+  max-width: 5rem;
+  margin-top: -2rem;
+}
+
+.service_title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+/* Sponsor */
+.sponsor {
+  background-color: var(--color-bg);
+}
+
+.sponsor_box {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* category */
+
+.category_container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.category_box {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 35px;
+  padding: 50px 0;
+}
+
+.category_sort {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 5px;
+  background-color: var(--color-bg);
+  border-radius: 10px;
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 5px;
+    color: var(--color-dark-2);
+  }
+}
+
+.category_img {
+  background-image: url("../assets/images/c89c7e6f0190ca2d58c9de3ce63de3b3.jpeg");
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-light-1);
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-bg);
+  }
+  button {
+    padding: 10px;
+    background-color: var(--color-secondary);
+    color: var(--color-light-1);
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 7px;
+    cursor: pointer;
+  }
+}
+
+.category_container2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.category_product {
+  background-image: url("../assets/images/agriculture-product.webp.svg");
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 35rem;
+  object-fit: cover;
+  border-radius: 10px;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+.product_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 10px;
+  h3 {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--color-dark-1);
+  }
+
+  p {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--color-dark-2);
+  }
+}
+
+.benifits {
+  display: flex;
+  gap: 10px;
+  h2 {
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--color-dark-1);
+  }
+  h3 {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--color-dark-1);
+  }
+  p {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--color-dark-2);
+  }
+  img {
+    width: 100%;
+  }
+}
+
+.accordion {
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion-header {
+  background: #f8f8f8;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.accordion-header:hover {
+  background: #e0e0e0;
+}
+
+.icon {
+  background: #d0db5a;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.accordion-content {
+  background: #fafafa;
+  padding: 0 15px;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-out;
+}
+
+.blog-container {
+  padding: 10rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.blog-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: scale(1.05);
+}
+
+.blog-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.blog-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover .blog-image img {
+  transform: scale(1.1);
+}
+
+.date-badge {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: var(--color-primary);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.blog-content {
+  padding: 15px;
+}
+
+.author {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 18px;
+  color: #333;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .blog-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1024px) {
+  .category_box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 0;
+  }
+  .category_container {
+    gap: 20px;
+  }
+  .category_img {
+    min-height: 220px;
+    padding: 20px;
+  }
+  .category_img h3 {
+    font-size: 20px;
+  }
+  .category_img p {
+    font-size: 15px;
+  }
+  .category_img button {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+  .category_container2 {
+    gap: 20px;
+  }
+  .category_product {
+    height: 30rem;
+  }
+  .product_text h3 {
+    font-size: 26px;
+  }
+  .product_text p {
+    font-size: 15px;
+  }
+  .benifits {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .benifits h2 {
+    font-size: 22px;
+  }
+  .benifits h3 {
+    font-size: 16px;
+  }
+  .benifits p {
+    font-size: 14px;
+  }
+  .accordion-header {
+    font-size: 14px;
+  }
+  .accordion-content {
+    font-size: 13px;
+  }
+  .sponsor_box {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  .sponsor_box img {
+    max-width: 140px;
+  }
+}
+
+@media (max-width: 768px) {
+  .category_box {
+    gap: 25px;
+    padding: 30px 0;
+  }
+  .category_img {
+    min-height: 200px;
+    padding: 15px;
+  }
+  .category_img h3 {
+    font-size: 18px;
+  }
+  .category_img p {
+    font-size: 14px;
+  }
+  .category_img button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+  .category_product {
+    height: auto;
+    min-height: 250px;
+  }
+  .product_text h3 {
+    font-size: 22px;
+  }
+  .product_text p {
+    font-size: 14px;
+  }
+  .benifits h2 {
+    font-size: 20px;
+  }
+  .benifits h3 {
+    font-size: 15px;
+  }
+  .benifits p {
+    font-size: 13px;
+  }
+  .accordion-header {
+    font-size: 14px;
+  }
+  .accordion-content {
+    font-size: 13px;
+  }
+  .sponsor_box img {
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .category_box {
+    gap: 20px;
+    padding: 25px 0;
+  }
+  .category_img {
+    min-height: 180px;
+    padding: 10px;
+  }
+  .category_img h3 {
+    font-size: 16px;
+  }
+  .category_img p {
+    font-size: 12px;
+  }
+  .category_img button {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+  .category_product {
+    min-height: 200px;
+  }
+  .product_text h3 {
+    font-size: 20px;
+  }
+  .product_text p {
+    font-size: 12px;
+  }
+  .benifits {
+    gap: 10px;
+  }
+  .benifits h2 {
+    font-size: 18px;
+  }
+  .benifits h3 {
+    font-size: 14px;
+  }
+  .benifits p {
+    font-size: 12px;
+  }
+  .accordion-header {
+    font-size: 13px;
+  }
+  .accordion-content {
+    font-size: 12px;
+  }
+  .sponsor_box {
+    gap: 8px;
+  }
+  .sponsor_box img {
+    max-width: 100px;
+  }
+}

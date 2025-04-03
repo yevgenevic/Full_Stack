@@ -1,0 +1,607 @@
+:root {
+  --color-primary: #4baf47;
+  --color-secondary: #eec044;
+  --color-dark-1: #1f1e17;
+  --color-dark-2: #878680;
+  --color-light-1: #ffffff;
+  --color-bg: #f8f7f0;
+}
+
+.header_text {
+  background-image: url(../assets/images/AboutHome.png);
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    text-align: center;
+    font-size: 15px;
+    color: var(--color-light-1);
+  }
+  h2 {
+    text-align: center;
+    font-size: 30px;
+    color: var(--color-light-1);
+    font-weight: 600;
+  }
+}
+
+.garden {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7rem 0;
+  gap: 100px;
+}
+
+.garden_img_box {
+  position: relative;
+  overflow: hidden;
+  padding: 0 10px;
+}
+
+.box_img1 {
+  border-radius: 10px;
+  display: block;
+  object-fit: cover;
+  margin-left: 70px;
+  z-index: 100;
+  height: 400px;
+  width: 100%;
+}
+
+.box_img2 {
+  position: absolute;
+  width: 200px;
+  object-fit: cover;
+  left: 0;
+  bottom: 0;
+  transform: translateX(-50);
+}
+
+.know_us {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 10px;
+  button {
+    padding: 10px;
+    color: var(--color-bg);
+    background-color: var(--color-primary);
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.5s;
+    &:hover {
+      background-color: darkgreen;
+    }
+  }
+
+  h3 {
+    font-size: 45px;
+    font-weight: 700;
+  }
+
+  h5 {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--color-primary);
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-dark-2);
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 5px;
+
+    span {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      gap: 10px;
+      h6 {
+        font-size: 17px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.eco_friendly {
+  background-image: url(../assets/images/eco_img.png);
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  background-attachment: fixed;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    cursor: pointer;
+  }
+
+  h4 {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+  }
+}
+
+
+.eco_bg {
+  background-color: var(--color-dark-1);
+}
+
+.eco_black_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 50px 0;
+  h4 {
+    color: var(--color-dark-2);
+    font-size: 20px;
+    font-weight: 600;
+  }
+  div {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.commet_bg {
+  padding: 100px 0;
+  background-image: url(../assets/images/commets.png);
+}
+
+.commet_head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.commets {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  h3 {
+    font-size: 48px;
+    font-weight: 700;
+  }
+}
+
+.customer_commmet {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  div {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      color: var(--color-dark-2);
+    }
+    h5 {
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .customer {
+      text-align: end;
+    }
+  }
+}
+
+.card_box {
+  padding: 100px 0;
+  span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    h3 {
+      font-size: 48px;
+      font-weight: 700;
+    }
+  }
+}
+
+.card_container {
+  padding: 20px 5px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.card {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.card-img {
+  display: block;
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 400px;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card-info {
+  width: 180px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: white;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  position: absolute;
+  transform: translateX(-30px);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.text h4 {
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.text p {
+  margin-left: 20px;
+  font-size: 14px;
+  color: gray;
+}
+
+@media (max-width: 1024px) {
+  .garden {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 40px 0;
+  }
+  .box_img1 {
+    height: 50vh;
+    margin-left: 0;
+    display: block;
+  }
+  .box_img2 {
+    width: 150px;
+  }
+  .know_us h3 {
+    font-size: 35px;
+  }
+  .know_us h5 {
+    font-size: 18px;
+  }
+  .know_us p {
+    font-size: 15px;
+  }
+  .know_us button {
+    font-size: 16px;
+    padding: 8px 14px;
+  }
+
+  .eco_friendly {
+    height: 60vh;
+  }
+  .eco_friendly h4 {
+    font-size: 24px;
+  }
+
+  .eco_black_box {
+    padding: 40px 0;
+  }
+  .eco_black_box div h4 {
+    font-size: 18px;
+  }
+
+  .commet_bg {
+    padding: 60px 0;
+  }
+  .commets h3 {
+    font-size: 36px;
+  }
+  .customer_commmet {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .customer_commmet div {
+    padding: 15px;
+  }
+  .customer_commmet div p {
+    font-size: 14px;
+  }
+  .customer_commmet div h5 {
+    font-size: 16px;
+  }
+
+  .card_box {
+    padding: 60px 0;
+  }
+  .card_box span h3 {
+    font-size: 36px;
+  }
+  .card_container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .card-img {
+    height: 300px;
+  }
+  .card-info {
+    width: 170px;
+  }
+  .icon {
+    width: 40px;
+    height: 40px;
+    transform: translateX(-20px);
+  }
+  .icon img {
+    width: 30px;
+    height: 30px;
+  }
+  .text h4 {
+    font-size: 14px;
+  }
+  .text p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .garden {
+    display: grid;
+    padding: 0 2rem;
+    grid-template-columns: 1fr;
+  }
+  .eco_friendly {
+    img {
+      width: 60px;
+    }
+    h4 {
+      text-align: center;
+    }
+  }
+  .garden {
+    gap: 30px;
+    padding: 30px 0;
+  }
+  .box_img1 {
+    height: 40vh;
+  }
+  .box_img2 {
+    width: 120px;
+  }
+  .know_us h3 {
+    font-size: 28px;
+  }
+  .know_us h5 {
+    font-size: 16px;
+  }
+  .know_us p {
+    font-size: 14px;
+  }
+  .know_us button {
+    font-size: 14px;
+    padding: 7px 12px;
+  }
+
+  .lorems {
+    span {
+      h6 {
+        font-size: 13px;
+      }
+    }
+  }
+
+  .eco_friendly {
+    height: 50vh;
+  }
+  .eco_friendly h4 {
+    font-size: 20px;
+  }
+  .eco_black_box div h4 {
+    font-size: 16px;
+  }
+  .commet_bg {
+    padding: 40px 0;
+  }
+  .commets h3 {
+    font-size: 28px;
+  }
+  .customer_commmet {
+    gap: 15px;
+  }
+  .customer_commmet div {
+    padding: 10px;
+  }
+  .customer_commmet div p {
+    font-size: 13px;
+  }
+  .customer_commmet div h5 {
+    font-size: 15px;
+  }
+  .card_box {
+    padding: 40px 0;
+  }
+  .card_box span h3 {
+    font-size: 28px;
+  }
+  .card_container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .card-img {
+    height: 250px;
+  }
+  .card-info {
+    width: 170px;
+  }
+  .icon {
+    width: 35px;
+    height: 35px;
+    transform: translateX(-15px);
+  }
+  .icon img {
+    width: 30px;
+    height: 30px;
+  }
+  .text h4 {
+    font-size: 13px;
+  }
+  .text p {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  .box_img2 {
+    display: none;
+  }
+  .eco_black_box {
+    display: flex;
+    flex-direction: column;
+  }
+  .garden {
+    gap: 20px;
+    padding: 20px 0;
+  }
+  .box_img1 {
+    height: 30vh;
+  }
+  .box_img2 {
+    width: 100px;
+  }
+  .know_us h3 {
+    font-size: 24px;
+  }
+  .know_us h5 {
+    font-size: 14px;
+  }
+  .know_us p {
+    font-size: 12px;
+  }
+  .know_us button {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+  .eco_friendly {
+    height: 40vh;
+  }
+  .eco_friendly h4 {
+    font-size: 16px;
+  }
+  .eco_black_box {
+    padding: 30px 0;
+  }
+  .eco_black_box div h4 {
+    font-size: 14px;
+  }
+  .commet_bg {
+    padding: 30px 0;
+  }
+  .commets h3 {
+    font-size: 24px;
+  }
+  .customer_commmet {
+    gap: 10px;
+  }
+  .customer_commmet div {
+    padding: 8px;
+  }
+  .customer_commmet div p {
+    font-size: 11px;
+  }
+  .customer_commmet div h5 {
+    font-size: 14px;
+  }
+  .card_box {
+    padding: 30px 0;
+  }
+  .card_box span h3 {
+    font-size: 24px;
+  }
+  .card_container {
+    gap: 15px;
+  }
+  .card-img {
+    height: 200px;
+  }
+  .card-info {
+    width: 160px;
+    padding: 8px;
+  }
+  .icon {
+    width: 30px;
+    height: 30px;
+    transform: translateX(-15px);
+  }
+  .icon img {
+    width: 30px;
+    height: 30px;
+  }
+  .text h4 {
+    font-size: 12px;
+  }
+  .text p {
+    font-size: 10px;
+  }
+}
